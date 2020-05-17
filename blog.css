@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+/*HEADER*/
+header {
+  background-color: #008489;
+  height: 65px;
+  color: #fff;
+}
+
+header .logo {
+  margin-left: 2em;
+  height: inherit;
+  float: left;
+}
+header .logo-text {
+  margin: 8px;
+}
+header ul {
+  list-style: none;
+  float: right;
+}
+.nav a {
+  color: #fff;
+}
+
+header ul li {
+  position: relative;
+  float: left;
+}
+header ul li ul {
+  position: absolute;
+  top: 66px;
+  left: 0;
+  width: 180px;
+  display: none;
+}
+header ul li:hover .dropdown-web {
+  display: block;
+}
+header ul li:hover .dropdown-english {
+  display: block;
+}
+header ul li ul li {
+  width: 100%;
+}
+header ul li ul li a {
+  background-color: #006669;
+  padding: 10px;
+  color: #444;
+}
+header ul li ul li a:hover {
+  background: #d5d6d6;
+}
+header ul li a {
+  display: block;
+  padding: 21px;
+  font-size: 1.1em;
+  text-decoration: none;
+}
+header ul li a:hover {
+  background-color: #006669;
+  transition: 0.5s;
+}
+
+header .menu-toggle {
+  display: none;
+  color: #fff;
+}
+header .menu-close {
+  display: none;
+  color: #fff;
+}
+/*MEDIA QUERIES */
+@media (max-width: 1002px) {
+  header {
+    position: relative;
+  }
+  header ul {
+    width: 100%;
+    background-color: #0e94a0;
+  }
+  header ul li {
+    width: 100%;
+  }
+  header ul li ul {
+    position: static;
+    display: block;
+    width: 100%;
+  }
+  header ul li ul li a {
+    padding: 10px;
+    padding-left: 50px;
+    background-color: #0e94a0;
+  }
+  header ul li ul li a:hover {
+    background-color: #006669;
+  }
+  header .menu-toggle {
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    font-size: 1.9em;
+    top: 13px;
+    right: 20px;
+    position: absolute;
+    display: block;
+  }
+  header .menu-close {
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    font-size: 1.9em;
+    top: 13px;
+    right: 20px;
+    position: absolute;
+    display: block;
+  }
+}
