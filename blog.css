@@ -76,13 +76,30 @@ header .menu-close {
   display: none;
   color: #fff;
 }
+
+/*Slide image*/
+.page-wrapper {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.page-wrapper .title-slider h1 {
+  text-align: center;
+}
+.page-wrapper .title-slider .image-slider {
+  margin-top: 20px;
+}
+.page-wrapper .title-slider .image-slider img {
+  width: 100%;
+  height: 700px;
+}
 /*MEDIA QUERIES */
 @media (max-width: 1002px) {
   header {
     position: relative;
   }
   header ul {
-  	display: none;
+    display: none;
     width: 100%;
     background-color: #0e94a0;
   }
